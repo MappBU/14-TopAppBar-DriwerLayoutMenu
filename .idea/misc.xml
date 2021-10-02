@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/android/TopAppBarWithDriwerLayiutMenu/app/src/main/res/layout/activity_main.xml" value="0.2722222222222222" />
+        <entry key="..\:/android/TopAppBarWithDriwerLayiutMenu/app/src/main/res/layout/driwer_menu_header.xml" value="0.32314814814814813" />
+        <entry key="..\:/android/TopAppBarWithDriwerLayiutMenu/app/src/main/res/layout/favorites.xml" value="0.2722222222222222" />
+        <entry key="..\:/android/TopAppBarWithDriwerLayiutMenu/app/src/main/res/layout/settings.xml" value="0.2722222222222222" />
+        <entry key="..\:/android/TopAppBarWithDriwerLayiutMenu/app/src/main/res/layout/upload.xml" value="0.2722222222222222" />
+        <entry key="..\:/android/TopAppBarWithDriwerLayiutMenu/app/src/main/res/menu/driwer_menu.xml" value="0.32314814814814813" />
+        <entry key="..\:/android/TopAppBarWithDriwerLayiutMenu/app/src/main/res/menu/top_app_bar.xml" value="0.20185185185185187" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK (2)" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+    tools:openDrawer="start" - Показывает Драйвер меню в режиме дизайна в Android Studio
+    android:fitsSystemWindows="true" - показывает Драйвер меню всегда поверх контента
+    -->
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:openDrawer="start"
+        android:fitsSystemWindows="true"
+        tools:context=".MainActivity">
+
+        <!--
+        CoordinatorLayout - Этот контейнер нужен для многих Баров в MD. В частности в TopAppBar
+        android:fitsSystemWindows="true" - Показывает TopAppBar поверх контента во FrameLayout
+        Потому что сам бар находится прямо на нашем FrameLayout, из за этого контент из Фрейма может залазить на TopAppBar (Не смещает его вниз)
+        -->
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/sectTopAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true">
+
+            <!--Контейнер самого TopAppBar-->
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--
+                Сам TopAppBar
+                android:layout_height="?attr/actionBarSize" - стандартная высота ActionBar
+                style="@style/Widget.MaterialComponents.Toolbar.Primary" - Стандартная тема для бара
+                -->
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/topAppBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/black"
+                    app:title="@string/app_name"
+                    app:titleTextColor="@color/white"
+                    app:menu="@menu/top_app_bar"
+                    app:navigationIcon="@drawable/menu"
+                    style="@style/Widget.MaterialComponents.Toolbar.Primary"/>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <!--Контент экрана-->
+        <FrameLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <!--
+        Этот блок всегда должен быть последним в контейнере DrawerLayout
+        android:layout_gravity="start" - указывает что вью будет вылезать слева
+        -->
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:menu="@menu/driwer_menu"
+            app:headerLayout="@layout/driwer_menu_header"
+            android:layout_gravity="start"/>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</layout>

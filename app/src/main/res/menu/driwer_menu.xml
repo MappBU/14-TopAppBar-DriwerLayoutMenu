@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/homeMenu"
+            android:icon="@drawable/upload"
+            android:title="@string/upload" />
+        <item
+            android:id="@+id/shopMenu"
+            android:icon="@drawable/settings"
+            android:title="@string/settings" />
+        <item
+            android:id="@+id/favoritesMenu"
+            android:icon="@drawable/favorites"
+            android:title="@string/favorites"/>
+        <item
+            android:id="@+id/accountMenu"
+            android:icon="@drawable/upload"
+            android:title="@string/upload" />
+        <item
+            android:id="@+id/contactMenu"
+            android:icon="@drawable/settings"
+            android:title="@string/settings"/>
+
+    </group>
+
+    <item
+        android:title="@string/main">
+        <menu>
+            <item
+                android:id="@+id/videoMenu"
+                android:icon="@drawable/favorites"
+                android:title="@string/favorites"/>
+            <item
+                android:id="@+id/locationMenu"
+                android:icon="@drawable/upload"
+                android:title="@string/upload"/>
+            <item
+                android:id="@+id/settingsMenu"
+                android:icon="@drawable/settings"
+                android:title="@string/settings"/>
+        </menu>
+    </item>
+
+    <item
+        android:title="@string/contacts">
+        <menu>
+            <item
+                android:id="@+id/helpMenu"
+                android:icon="@drawable/favorites"
+                android:title="@string/favorites"/>
+            <item
+                android:id="@+id/developerMenu"
+                android:icon="@drawable/settings"
+                android:title="@string/settings"/>
+            <item
+                android:id="@+id/advansedMenu"
+                android:icon="@drawable/favorites"
+                android:title="@string/favorites"/>
+            <item
+                android:id="@+id/loginsMenu"
+                android:icon="@drawable/settings"
+                android:title="@string/settings"/>
+
+        </menu>
+    </item>
+
+</menu>
